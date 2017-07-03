@@ -1,0 +1,9 @@
+---
+pipeline:
+
+  backend:
+    image: python:3.6.1-alpine3.6
+    commands:
+      - echo ${DRONE_BUILD_NUMBER}
+      - echo ${DRONE_JOB_NUMBER}
+      - echo ${DRONE_TAG}

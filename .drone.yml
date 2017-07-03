@@ -9,4 +9,4 @@ pipeline:
       - echo ${DRONE_TAG}
       - echo ${DRONE_BRANCH}
     when:
-        branch: [ master,  refs/tags/* ]
+        branch: [ refs/heads/master,  refs/tags/* ]
